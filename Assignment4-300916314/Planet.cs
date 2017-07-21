@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 /* Name: Bal Krishna Dhakal
  * Date: July 21, 2017
  * Description: This is the Abstract Planet Class
- * Version: 0.1 - Created the Abstract Planet Class
+ * Version: 0.2 - Created Constructor and ToString Method to Abstract Planet Class
 */
 namespace Assignment4_300916314
 {
@@ -91,6 +91,24 @@ namespace Assignment4_300916314
                 this._rotationPeriod = value;
             }
         }
-      
+        // CONSTRUCTORS
+        public Planet (string name, double diameter, double mass)
+        {
+            this._name = name;
+            this._diameter = diameter;
+            this._mass = mass;
+        }
+        //PRIVATE METHODS
+        // PUBLIC OVERRIDDEN METHODS
+        /// <summary>
+        /// Overridden the build in ToString method
+        /// </summary>
+        /// <returns></returns>
+
+        public override string ToString()
+        {
+            return string.Format("Name:{0} Diameter: {1} Mass: {2}", Name, Diameter, Mass);
+        }
+
     }
 }
