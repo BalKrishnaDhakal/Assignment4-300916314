@@ -8,7 +8,7 @@ using System.Threading.Tasks;
  * Description: This is an GiantPlanet Class which inherits from the Planet Class
  * and implements the IHasMoons and IHasRings Interface
  * must be implemente in any class that subscribe to it 
- *Version:0.1 - Created GiantPlanet Class
+ *Version:0.2 - Implemented IHasMoons and IHasRings interfaces
  */
 namespace Assignment4_300916314
 {
@@ -33,6 +33,16 @@ namespace Assignment4_300916314
          : base(name, diameter, mass)
         {
             this._type = type;
+        }
+        // PRIVATE METHODS
+        // PUBLIC METHODS
+        public bool HasMoons()
+        {
+            return (this.MoonCount > 0);
+        }
+        public bool HasRings()
+        {
+            return (this.RingCount > 0);
         }
 
     }
