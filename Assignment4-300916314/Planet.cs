@@ -92,6 +92,13 @@ namespace Assignment4_300916314
             }
         }
         // CONSTRUCTORS
+        /// <summary>
+        /// This is the main constructor for abstract Planet Class
+        /// It takes three arguments - name(string),  diameter (double) and mass (double)
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="diameter"></param>
+        /// <param name="mass"></param>
         public Planet (string name, double diameter, double mass)
         {
             this._name = name;
