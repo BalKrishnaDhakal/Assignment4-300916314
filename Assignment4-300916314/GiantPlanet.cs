@@ -36,10 +36,18 @@ namespace Assignment4_300916314
         }
         // PRIVATE METHODS
         // PUBLIC METHODS
+        /// <summary>
+        /// This is public HasMoons Method
+        /// </summary>
+        /// <returns></returns>
         public bool HasMoons()
         {
             return (this.MoonCount > 0);
         }
+        /// <summary>
+        /// This is public HasRings Method
+        /// </summary>
+        /// <returns></returns>
         public bool HasRings()
         {
             return (this.RingCount > 0);

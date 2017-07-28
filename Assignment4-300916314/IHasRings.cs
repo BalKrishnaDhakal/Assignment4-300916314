@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Text;
 /* Name: Bal Krishna Dhakal
  * Date: July 22, 2017
  * Description: This is IHasRings Interface

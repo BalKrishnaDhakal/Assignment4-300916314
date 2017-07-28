@@ -23,7 +23,7 @@ namespace Assignment4_300916314
         private double _orbitalPeriod;
         private int _ringCount;
         private double _rotationPeriod;
-        //pUBLIC PROPERTIES
+        // PUBLIC PROPERTIES
         public double Diameter
         {
             get
@@ -114,7 +114,8 @@ namespace Assignment4_300916314
 
         public override string ToString()
         {
-            return string.Format("Name:{0} Diameter: {1} Mass: {2}", Name, Diameter, Mass);
+             return string.Format(" Name:{0,5}, Diameter: {1,5},  Mass: {2,5}", Name, Diameter, Mass);
+   
         }
 
     }
